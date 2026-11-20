@@ -276,15 +276,35 @@ Body weight in chickens typically follows a sigmoid growth pattern, characterise
 
 Growth is the net result of cell replication, tissue differentiation, matrix formation, cell death and other interrelated processes (Fatai et al., 2023). Because tissue accretion is constrained by the genetic size potential of the bird and by the supply of nutrients and energy, the absolute growth rate cannot rise indefinitely. It reaches a maximum and then declines toward zero as the bird approaches mature size (Fitzhugh, 1976; Ricklefs, 1985). Different functions encode this constraint through different differential equations:
 
-Logistic (Verhulst, 1838): . Relative growth rate falls linearly as W approaches A.
+**Logistic (Verhulst, 1838):**
 
-Gompertz (Gompertz, 1825):   Relative growth rate falls exponentially with age.
+$$\frac{dW}{dt}=kW\left(1-\frac{W}{A}\right)$$
 
-von Bertalanffy (von Bertalanffy, 1957): ,with synthesis proportional to surface-like area (W(2/3)) and degradation proportional to mass. Here A = (η/κ)³ and k = κ/3.
+Relative growth rate falls linearly as $W$ approaches $A$.
 
-Brody (Brody, 1945):  . Growth rate is proportional to the weight remaining to be gained, so there is no inflection.
+**Gompertz (Gompertz, 1825):**
 
-Richards (Richards, 1959):  . A shape parameter generalises the other curves.
+$$\frac{dW}{dt}=kW\ln\left(\frac{A}{W}\right)$$
+
+Relative growth rate falls exponentially with age.
+
+**von Bertalanffy (von Bertalanffy, 1957):**
+
+$$\frac{dW}{dt}=\eta W^{2/3}-\kappa W$$
+
+Synthesis is proportional to surface-like area ($W^{2/3}$) and degradation proportional to mass. Here $A=(\eta/\kappa)^3$ and $k=\kappa/3$.
+
+**Brody (Brody, 1945):**
+
+$$\frac{dW}{dt}=k(A-W)$$
+
+Growth rate is proportional to the weight remaining to be gained, so there is no inflection.
+
+**Richards (Richards, 1959):**
+
+$$\frac{dW}{dt}=kmW\left(1-\frac{W}{A}\right)$$
+
+A shape parameter generalises the other curves. (In the differential form shown here, $m$ controls the shape.)
 
 Where:
 
@@ -326,7 +346,11 @@ The logistic curve is symmetric about its inflection point, so the fastest growt
 
 The logistic function has been used in poultry growth modelling both as a standard non-linear model and within non-linear mixed-effects frameworks to estimate individual growth parameters (Aggrey, 2002, 2009). In Italian local chickens, several non-linear models fitted very closely R² 0.992 to 0.999, although the logistic gave a higher root mean square error (RMSE) than the Gompertz and Richards models (Rizzi et al., 2013). In FUNAAB Alpha chickens, the logistic model gave the lowest asymptotic weight and the highest maturation rate (K) of the four models fitted, and it ranked last on the Akaike information criterion (AIC) and Bayesian information criterion BIC (Bashiru et al., 2019b). A comparatively low asymptotic weight was also reported for FUNAAB Alpha chickens under the logistic model (Fatai et al., 2023). In Noiler chickens, the logistic model fitted worse than the Gompertz (Adamu et al., 2021; Isa and Joel, 2026).
 
-The inflection occurs at  , where  , and the maximum absolute growth rate is .
+The logistic model is expressed as:
+
+$$W(t)=\frac{A}{1+Be^{-kt}}$$
+
+The inflection occurs at $t^*=\frac{\ln B}{k}$, where $W^*=\frac{A}{2}$, and the maximum absolute growth rate is $AGR_{max}=\frac{kA}{4}$.
 
 #### **2.4.4** Gompertz model
 
@@ -334,11 +358,21 @@ The Gompertz function is consistently identified as one of the most suitable thr
 
 This pattern largely holds in Nigerian chicken populations, where the Gompertz model has been reported as the best fitting function in the Yoruba ecotype (Fatai et al., 2023), in male and female Noiler chickens (Adamu et al., 2021), and in Cobb 500, Marshall, and Noiler chickens reared in Sokoto (Isa and Joel, 2026). The evidence is not uniform, however. In FUNAAB Alpha chickens, the von Bertalanffy function achieved a better fit, leaving the Gompertz model in second place (Bashiru et al., 2019b; Fatai et al., 2023). This suggests that although the Gompertz model is a strong general candidate, the optimal growth function may depend on the genotype and population under study.
 
-The inflection occurs at
+The Gompertz model is:
 
-Body Weight at inflection Poin	t
+$$W(t)=Ae^{-Be^{-kt}}$$
 
-Maximum absolute growth rate
+Inflection age:
+
+$$t^*=\frac{\ln B}{k}$$
+
+Weight at inflection:
+
+$$W^*=Ae^{-1}\approx0.368A$$
+
+Maximum absolute growth rate:
+
+$$AGR_{max}=\frac{kA}{e}\approx0.368kA$$
 
 Where;
 
@@ -352,17 +386,23 @@ The Gompertz function exhibits an asymmetric sigmoid growth pattern, with the po
 
 #### **2.4.5** Richard model
 
-Richards (1959) proposed a flexible function with a free shape parameter. A common parameterisation is
+Richards (1959) proposed a flexible function with a free shape parameter. A common parameterisation is:
 
-For this parameterisation, the inflection-point equations are
+$$W(t)=A\left(1+Be^{-kt}\right)^{-1/m}$$
 
-Age at the inflection point
+For this parameterisation, the inflection-point equations are:
 
-Body weight at the inflection point
+Age at the inflection point:
+
+$$t^*=\frac{\ln(Bm)}{k}$$
+
+Body weight at the inflection point:
+
+$$W^*=A\left(\frac{1}{1+m}\right)^{1/m}=A(1+m)^{-1/m}$$
 
 These expressions assume that:
 
-The Richards growth function reduces to the logistic  growth functions.
+The Richards growth function can reduce to special cases by setting the shape parameter to corresponding values (as noted in the cited unified-Richards literature).
 
 The additional parameter in the Richards function increases flexibility but may reduce parameter stability. The fourth parameter may lead to over-parameterisation of the growth model (Aggrey, 2002). Accurate estimation of the asymptotic weight using the Richards function may require body-weight records extending to approximately 90 days or later, whereas the Gompertz function requires one fewer parameter (Rizzi et al., 2013). In FUNAAB Alpha chickens, Richards model has been reported to perform poorly (Fatai et al., 2023), and model comparisons using Akaike’s Information Criterion (AIC) and the Bayesian Information Criterion (BIC) placed it behind both the von Bertalanffy and Gompertz functions (Bashiru et al., 2019b). By contrast, the Richards function is often favoured for describing growth in meat and egg-type chicken strains because its shape is flexible (Darmani Kuhi et al., 2003). Its many published parameterisations can be reduced to two general forms, and adopting a unified parameterisation may prevent the unrealistic parameter estimates that arise when a fixed-shape model is imposed (Tjørve, 2010). The convergence problems commonly reported for the Richards function are also in line with the strong parameter correlations that can occur in nonlinear models (Ratkowsky, 1983).
 
@@ -384,17 +424,27 @@ m = shape parameter controlling the curve's form.
 
 #### **2.4.6** Brody model
 
-It is a monomolecular (Mitscherlich-type) curve with no inflection: the growth rate is maximal at hatching, , The absolute growth rate declines after its initial value, and hatch weight is expressed as . Brody type curves describe the decelerating, post-inflection phase of growth well but cannot represent the early accelerating phase of chicken growth. Consequently, they are best suited to datasets that begin after the inflection point or to species and genetic lines that attain maximum growth very early. Brody and Mitscherlich functions have been fitted to FUNAAB Alpha and Yoruba chickens (Fatai et al., 2023), while the Brody model has produced the lowest maturity rate estimate among the models evaluated in Cobb 500, Marshall and Noiler chickens (Isa and Joel, 2026).
+It is a monomolecular (Mitscherlich-type) curve with no inflection: the growth rate is maximal at hatching. The absolute growth rate declines after its initial value. The hatch weight for the Brody form is $W_0=A(1-B)$. Brody type curves describe the decelerating, post-inflection phase of growth well but cannot represent the early accelerating phase of chicken growth. Consequently, they are best suited to datasets that begin after the inflection point or to species and genetic lines that attain maximum growth very early. Brody and Mitscherlich functions have been fitted to FUNAAB Alpha and Yoruba chickens (Fatai et al., 2023), while the Brody model has produced the lowest maturity rate estimate among the models evaluated in Cobb 500, Marshall and Noiler chickens (Isa and Joel, 2026).
 
-Brody growth function
+The Brody growth function is:
 
-The von Bertalanffy function,  (von Bertalanffy, 1957), is a Brody-type curve raised to the third power,
+$$W(t)=A\left(1-Be^{-kt}\right)$$
 
-Age at the inflection point
+The von Bertalanffy function (von Bertalanffy, 1957) is a Brody-type curve raised to the third power:
 
-Body weight at the inflection point
+$$W(t)=A\left(1-Be^{-kt}\right)^3$$
 
-Maximum absolute growth rate
+Age at the inflection point:
+
+$$t^*=\frac{\ln(3B)}{k}$$
+
+Body weight at the inflection point:
+
+$$W^*=\frac{8A}{27}\approx0.296A$$
+
+Maximum absolute growth rate:
+
+$$AGR_{max}=\frac{4kA}{9}$$
 
 (the inflection occurs at a positive age only when B > 1/3). It has been reported as the best fit for several indigenous chickens in Kenya, Ghana, Turkey and Nigeria (Bashiru et al., 2019b; Fatai et al., 2023), including FUNAAB Alpha.
 
@@ -402,17 +452,31 @@ Maximum absolute growth rate
 
 #### **2.5.1** Coefficient of Determination (R2)
 
+For observed body weights $W_i$ and fitted values $\hat W_i$, the sums of squares used in the model assessment are:
+
+$$SSE=\sum_{i=1}^{n}(W_i-\hat W_i)^2$$
+
+$$SST=\sum_{i=1}^{n}(W_i-\bar W)^2$$
+
+$$R^2=1-\frac{SSE}{SST}$$
+
 In linear models with an intercept, SST = SSR + SSE, so R² lies between 0 and 1 and is the proportion of variance explained. The decomposition of the total sum of squares does not generally hold in nonlinear regression, which can make the coefficient of determination R2 misleading (Kvålseth, 1985). Monte Carlo simulations have also demonstrated that R2 is an inadequate measure of goodness of fit for nonlinear models (Spiess and Neumeyer, 2010). This limitation is evident in poultry growth studies, where R2 values ranged from 0.987 to 0.999 across models fitted to Yoruba chickens (Fatai et al., 2023) and from 0.992 to 0.999 in Italian local chickens (Rizzi et al., 2013), providing little discrimination between models that were ranked differently by other selection criteria. Similarly, in male Noiler chickens, the R2 values for the Gompertz 0.8122 and logistic (0.8103) models differed by only 0.0019, whereas their corresponding Akaike Information Criterion (AIC) values 6927.5 and 6933.0, respectively differed by 5.5 units (Adamu et al., 2021). Therefore, R2 is best reported as a descriptive measure of model fit rather than used as the sole criterion for model selection.
 
 where:
 
-The coefficient of determination is   and
+$$R^2=1-\frac{SSE}{SST}$$
 
-R2 = coefficient of determination , SSE = sum of squared errors, SST = total sum of squares.
+The coefficient of determination is defined as above, and
+
+ $R^2$ = coefficient of determination; $SSE$ = sum of squared errors; $SST$ = total sum of squares.
 
 #### **2.5.2** Residual mean square and root mean square error (RMS/RMSE)
 
-with    Some authors divide by n rather than (n-p); therefore, the definition used should be explicitly stated because the two differ when the number of parameters is large relative to the sample size.
+$$MSE=\frac{SSE}{n-p}$$
+
+$$RMSE=\sqrt{\frac{SSE}{n}}$$
+
+Some authors divide by $n$ rather than $(n-p)$; therefore, the definition used should be explicitly stated because the two differ when the number of parameters is large relative to the sample size.
 
 #### **2.5.3** Akaike information criterion (AIC)
 
@@ -420,19 +484,31 @@ Models have been compared using R² together with the residual standard deviatio
 
 A criterion based on expected information loss was introduced for model selection (Akaike, 1974). For least-squares fits with normally distributed, constant-variance errors, and after omitting terms common to all candidate models,
 
+$$AIC=n\ln\left(\frac{SSE}{n}\right)+2p$$
+
 (Burnham and Anderson, 2002)
 
-When n/p is small (below about 40), the corrected form is recommended (Hurvich and Tsai, 1989).
+When $n/p$ is small (below about 40), the corrected form is recommended (Hurvich and Tsai, 1989):
+
+$$AIC_c=AIC+\frac{2p(p+1)}{n-p-1}$$
 
 The model with the smallest value is preferred, and only differences matter:
 
-Akaike weights,  The relative support for each model can be assessed using Akaike weights (Burnham and Anderson, 2002). As a worked example, the male Noiler AIC values reported by Adamu et al. (2021) can be used to illustrate the calculation.
+Akaike weights:
 
-so  and the weights are 0.940 for the Gompertz and 0.060 for the logistic. Both models have three parameters, so the comparison is not affected by differences in the penalty term.
+$$\Delta_i=AIC_i-AIC_{min}$$
+
+$$w_i=\frac{e^{-\Delta_i/2}}{\sum_{j=1}^{R}e^{-\Delta_j/2}}$$
+
+The relative support for each model can be assessed using Akaike weights (Burnham and Anderson, 2002). As a worked example, the male Noiler AIC values reported by Adamu et al. (2021) can be used to illustrate the calculation.
+
+For this example, the difference is $\Delta_{Logistic}=6933.0-6927.5=5.5$, so $e^{-5.5/2}=e^{-2.75}\approx0.064$. After normalising across the two models, the weights are 0.940 for Gompertz and 0.060 for Logistic. Both models have three parameters, so the comparison is not affected by differences in the penalty term.
 
 Two practical considerations are important. First, absolute AIC values depend on the dataset and sample size, so comparisons should generally be restricted to models fitted to the same data. For example, AIC values were approximately 44 to 54 when mean weights at selected ages were modelled (Bashiru et al., 2019a, 2019b), compared with approximately 6,900 when individual weights were modelled (Adamu et al., 2021). Second, the mathematical expression must be specified correctly.
 
 #### **2.5.4** Bayesian information criterion (BIC)
+
+$$BIC=n\ln\left(\frac{SSE}{n}\right)+p\ln(n)$$
 
 Because ln(n) exceeds 2 once n ≥ 8, BIC, which was derived by Schwarz (1978), penalises additional parameters more heavily than AIC and tends to favour simpler models. This is relevant when a four parameter Richards model competes with three parameter models: in the FUNAAB Alpha data, the Richards model’s extra parameter was penalised (Bashiru et al., 2019b). BIC differences of 2 to 6 are interpreted as positive evidence for the model with the lower BIC, 6-10 as strong evidence, and above 10 as very strong evidence (Kass and Raftery, 1995). Both criteria rely on likelihoods that assume independent errors, an assumption violated by repeated weight measurements on the same bird. Mixed effects formulations that add bird-level random parameters address this problem and substantially improved accuracy in mule ducks, reducing the residual standard deviation by about 55% (Aggrey, 2009; Vitezica et al., 2010; Galeano Vasco et al., 2014).
 
@@ -444,7 +520,16 @@ Biological plausibility is a separate test. Useful checks are whether the predic
 
 ### **2.6** Biological and mathematical foundations of growth curves
 
-The quantities of practical interest are derived from the fitted parameters. Table 2.0 gives the formulas
+The quantities of practical interest are derived from the fitted parameters. The model-derived quantities are summarised below.
+
+| Growth model | Hatch weight ($W_0$) | Inflection age ($t^*$) | Inflection weight ($W^*$) | Maximum AGR |
+|---|---|---|---|---|
+| Logistic | $A/(1+B)$ | $\ln(B)/k$ | $A/2$ | $kA/4$ |
+| Gompertz | $Ae^{-B}$ | $\ln(B)/k$ | $Ae^{-1}\approx0.368A$ | $kA/e$ |
+| von Bertalanffy | $A(1-B)^3$ | $\ln(3B)/k$ | $8A/27\approx0.296A$ | $4kA/9$ |
+| Brody | $A(1-B)$ | — | — | $kAB$ at $t=0$ |
+
+
 
 Table 2.0 Summary of Growth Characteristics and Parameter Estimates of Four Nonlinear Growth Models
 
@@ -470,9 +555,13 @@ Growth parameters support several decisions. The age at inflection and the maxim
 
 #### **2.6.5** Relationship between chronological age and body weight.
 
-Body weight is a non-linear, monotonic increasing function of age. The absolute growth rate   rises to a maximum at the inflection point and falls thereafter, whereas the relative growth rate  declines throughout. For the Gompertz model,
+Body weight is a non-linear, monotonic increasing function of age. The absolute growth rate (AGR) rises to a maximum at the inflection point and falls thereafter, whereas the relative growth rate (RGR) declines throughout.
 
-; for the logistic model, RGR = k·(1 − W/A). The age-weight relationship also differs by sex. Male FUNAAB Alpha chickens were similar to females at hatch (P > 0.05) but heavier at every later age (P < 0.05), and the gap widened up to 20 weeks (Bashiru et al., 2019a). Chronological age is an imperfect proxy for physiological development, because feeding, climate and disease alter the weight reached at a given age, and differences among reports have been attributed to genotype, population structure, feeding and environment (Sanusi and Oseni, 2019; Fatai et al., 2023). Weight variance also increases with age, which violates the constant-variance assumption of ordinary least squares and motivates weighted fits or mixed models (Aggrey, 2009; Vitezica et al., 2010). Finally, the distinction between average and individual body weights matters, because curves fitted to flock means hide between-bird variation (Atil et al., 2007).
+$$AGR(t)=\frac{dW(t)}{dt}$$
+
+$$RGR(t)=\frac{1}{W(t)}\frac{dW(t)}{dt}$$
+
+For the Gompertz model, $RGR(t)=k\ln(A/W)$; for the logistic model, $RGR(t)=k(1-W/A)$. The age-weight relationship also differs by sex. Male FUNAAB Alpha chickens were similar to females at hatch (P > 0.05) but heavier at every later age (P < 0.05), and the gap widened up to 20 weeks (Bashiru et al., 2019a). Chronological age is an imperfect proxy for physiological development, because feeding, climate and disease alter the weight reached at a given age, and differences among reports have been attributed to genotype, population structure, feeding and environment (Sanusi and Oseni, 2019; Fatai et al., 2023). Weight variance also increases with age, which violates the constant-variance assumption of ordinary least squares and motivates weighted fits or mixed models (Aggrey, 2009; Vitezica et al., 2010). Finally, the distinction between average and individual body weights matters, because curves fitted to flock means hide between-bird variation (Atil et al., 2007).
 
 Where:
 
@@ -522,7 +611,7 @@ i = index identifying each observation.
 
 #### **2.7.3** Segmented or spline regression
 
-The curve is continuous at each knot. The slope in the first segment is β₁, and the slope after the j-th knot is , so every coefficient is interpretable as a change in growth rate. A knot is a point at which the growth rate changes. Knots can be fixed from the data plot (Aggrey, 2002; Bashiru et al., 2019a) or estimated as breakpoints in segmented regression. Penalised B-splines are a smoother alternative that controls flexibility by penalty and not by knot number, and B-spline random regressions have been used to model growth in cattle.
+The curve is continuous at each knot. The slope in the first segment is $\beta_1$, and the slope after the $j$-th knot is $\beta_1+\beta_2+\cdots+\beta_{1+j}$, so every coefficient is interpretable as a change in growth rate. A knot is a point at which the growth rate changes. Knots can be fixed from the data plot (Aggrey, 2002; Bashiru et al., 2019a) or estimated as breakpoints in segmented regression. Penalised B-splines are a smoother alternative that controls flexibility by penalty and not by knot number, and B-spline random regressions have been used to model growth in cattle.
 
 In a random-bred population raised to 170 days, three nonlinear models fitted better than a spline with fixed knots at 6, 18 and 113 days (four segments), judging by R² and residual standard deviation (Aggrey, 2002). In mule ducks, a mixed-effects Weibull model fitted best and a mixed-effects spline came second, with the spline able to represent the piecewise nature of growth even when records extend beyond the asymptote (Vitezica et al., 2010). For FUNAAB Alpha chickens, splines with 3, 4, 5 and 6 knots were compared, for example SP3 with knots at weeks 4, 10 and 16 (Bashiru et al., 2019a). The three knot model suited males best (AIC = 46.735, BIC = 55.221) and the four knot model suited females best (AIC = 43.867, BIC = 54.201). The better fit with fewer knots agrees with guidance to keep knots few unless the sample is large (Bashiru et al., 2019a). The male SP3 estimate of hatch weight (74.71 g) was far above the observed day-old mean (33.40 g), which shows that a model with the best AIC can still extrapolate poorly back to the origin (Bashiru et al., 2019a). Regression coefficients were largest between 3 and 10 weeks, which suggests that early growth rate may indicate later performance (Bashiru et al., 2019a).
 
@@ -584,7 +673,26 @@ Individual live body weight (g) will be recorded for every bird at hatch (day-ol
 
 #### **3.7.2** Fitting the growth models
 
-Body weight (W) will be modelled as a function of age (t) using five nonlinear growth functions and linear and polynomial regression models:
+Body weight ($W$) will be modelled as a function of age ($t$) using the following nonlinear growth functions and regression models. Equations are shown below in a readable display format:
+
+**Candidate model equations**
+
+| Model | Equation |
+|---|---|
+| Gompertz | $W(t)=Ae^{-Be^{-kt}}$ |
+| Logistic | $W(t)=\dfrac{A}{1+Be^{-kt}}$ |
+| von Bertalanffy | $W(t)=A(1-Be^{-kt})^3$ |
+| Richards | $W(t)=A(1+Be^{-kt})^{-1/m}$ |
+| Brody | $W(t)=A(1-Be^{-kt})$ |
+| Linear regression | $W_i=\beta_0+\beta_1t_i+\varepsilon_i$ |
+| Quadratic regression | $W_i=\beta_0+\beta_1t_i+\beta_2t_i^2+\varepsilon_i$ |
+| Cubic regression | $W_i=\beta_0+\beta_1t_i+\beta_2t_i^2+\beta_3t_i^3+\varepsilon_i$ |
+
+For the segmented regression formulation, the continuous piecewise model is:
+
+$$W(t)=\beta_0+\beta_1t+\sum_{j=1}^{q}\beta_{1+j}(t-\tau_j)_+$$
+
+where $(t-\tau_j)_+=\max(0,t-\tau_j)$ and $\tau_j$ is the $j$th knot/breakpoint.
 
 Table 3.1: Nonlinear, Linear, and Polynomial Regression Models for Chicken Growth Curve Analysis.
 
@@ -593,6 +701,19 @@ Source: ( Richards, 1959; Knížetová et al., 1995; Rawlings et al., 1998; Ara�
 Models will initially be fitted separately for each genotype and then examined by genotype and sex. Nonlinear models will be fitted using nonlinear least squares with reasonable starting values and parameter constraints. Repeated measurements from the same bird will be accounted for in inferential analyses.
 
 #### **3.7.3** Goodness-of-fit assessment
+
+The model statistics will be calculated as follows (using $n$ observations and $p$ fitted parameters):
+
+$$SSE=\sum_{i=1}^{n}(W_i-\hat W_i)^2$$
+
+$$R^2=1-\frac{SSE}{SST},\qquad RMSE=\sqrt{\frac{SSE}{n}}$$
+
+$$AIC=n\ln\left(\frac{SSE}{n}\right)+2p$$
+
+$$BIC=n\ln\left(\frac{SSE}{n}\right)+p\ln(n)$$
+
+Residuals will be inspected graphically against age and fitted values.
+
 
 Model performance will be compared using the coefficient of determination, root mean square error, Akaike information criterion, Bayesian information criterion, and residual diagnostics:
 
