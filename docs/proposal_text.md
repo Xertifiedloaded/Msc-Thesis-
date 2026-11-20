@@ -4,7 +4,7 @@
 
 ### ON
 
-## COMPARISON OF DIFFERENT NONLINEAR AND REGRESSION MODELS FOR DESCRIBING GROWTH CURVES 
+## COMPARISON OF DIFFERENT NONLINEAR AND REGRESSION MODELS FOR DESCRIBING GROWTH CURVES IN FUNAAB ALPHA (DUAL PURPOSE) AND NOILER CHICKENS
 
 ### BY
 
@@ -929,98 +929,73 @@ Zuidhof, M. J., Schneider, B. L., Carney, V. L., Korver, D. R., and Robinson, F.
 
 Şengül, T., Çelik, Ş., Şengül, A. Y., İnci, H., and Şengül, Ö. 2024. Investigation of growth curves with different nonlinear models and MARS algorithm in broiler chickens. PLOS ONE, 19(11), 1-15. https://doi.org/10.1371/journal.pone.0307037
 
-### Table 1
+### Table 1. Weight gain over Fulani at 42 days
 
 | Genotype | Origin | Weight gain over Fulani at 42 days (%) |
-
+|---|---|---:|
 | Noiler | Nigeria | 368 |
-
 | Kuroiler | India | 296 |
-
 | Sasso | France | 245 |
-
 | FUNAAB Alpha | Nigeria | 187 |
 
-### Table 2
+### Table 2. Growth-curve parameters
 
-| Parameter | Interpretation | Practical mode |
+| Parameter | Interpretation | Practical meaning |
+|---|---|---|
+| $A$ | Asymptotic (mature) body weight, g | Extrapolated beyond the data if birds are not weighed to maturity |
+| $B$ | Integration constant | Fixes the starting weight; hatch weight is model-specific: Logistic $\frac{A}{1+B}$, Gompertz $Ae^{-B}$, Brody $A(1-B)$, and von Bertalanffy $A(1-B)^3$ |
+| $k$ | Maturing-rate parameter / maturity index (per week) | Rate of approach to $A$ relative to size; not a weight gain in grams |
+| $m$ (or $d$) | Shape parameter (Richards model) | Determines the position of the inflection relative to $A$ |
 
-| A | Asymptotic (mature) body weight, g | Extrapolated beyond the data if birds are not weighed to maturity |
-
-| B | Integration constant | Fixes the starting weight; hatch weight =  /  (logistic),   (Gompertz) ,  (Brody),  /  (von Bertalanffy) |
-
-| K | Maturing rate  / (maturity index),per week | Rate of approach to A relative to size, not a weight gain in grams |
-
-| m (or d) | Shape parameters / (Richards only) | Determines the position of the inflection relative to A |
-
-### Table 3
+### Table 3. Derived growth characteristics for nonlinear models
 
 | Quantity | Logistic | Gompertz | von Bertalanffy | Brody |
+|---|---|---|---|---|
+| Hatch weight, $W_0$ | $\frac{A}{1+B}$ | $Ae^{-B}$ | $A(1-B)^3$ | $A(1-B)$ |
+| Inflection age, $t^*$ | $\frac{\ln B}{k}$ | $\frac{\ln B}{k}$ | $\frac{\ln(3B)}{k}$ | — |
+| Weight at inflection, $W^*$ | $\frac{A}{2}$ | $Ae^{-1}\approx0.368A$ | $\frac{8A}{27}\approx0.296A$ | — |
+| Maximum AGR | $\frac{kA}{4}$ | $\frac{kA}{e}$ | $\frac{4kA}{9}$ | $kAB$ (at $t=0$) |
+| Age at 95% of $A$ | $\frac{\ln(19B)}{k}$ | $\frac{\ln B+2.970}{k}$ | $\frac{\ln B+4.077}{k}$ | $\frac{\ln(20B)}{k}$ |
 
-| Hatch-weigh, W₀ |  |  |  |  |
+**Source:** Araújo et al. (2018).  
+**Notation:** $A$ = asymptotic body weight; $B$ = integration constant; $k$ = growth-rate parameter; $W_0$ = hatch weight; $W^*$ = weight at inflection; $t^*$ = age at inflection; AGR = average growth rate; $e$ = Euler's number; and $\ln$ = natural logarithm.
 
-| Inflection age, t* |  |  |  | none |
-
-| Weight at inflection, W* |  |  |  | none |
-
-| Maximum AGR |  |  |  |  |
-
-| Age at 95% of A |  |  |  |  |
-
-### Table 4
+### Table 4. Weekly body-weight gain examples
 
 | Sex | Period (weeks) | Start weight (g) | End weight (g) | Calculation | Gain (g/week) |
+|---|---|---:|---:|---|---:|
+| Male | 4 to 10 | 296.65 | 805.29 | $(805.29-296.65)/6$ | 84.8 |
+| Male | 10 to 20 | 805.29 | 1894.80 | $(1894.80-805.29)/10$ | 109.0 |
+| Female | 4 to 10 | 254.27 | 568.23 | $(568.23-254.27)/6$ | 52.3 |
+| Female | 10 to 20 | 568.23 | 1321.71 | $(1321.71-568.23)/10$ | 75.3 |
 
-| Male | 4 to 10 | 296.65 | 805.29 | (805.29 − 296.65)/6 | 84.8 |
+### Table 5. Vaccination and medication programme
 
-| Male | 10 to 20 | 805.29 | 1894.80 | (1894.80 − 805.29)/10 | 109.0 |
-
-| Female | 4 to 10 | 254.27 | 568.23 | (568.23 − 254.27)/6 | 52.3 |
-
-| Female | 10 to 20 | 568.23 | 1321.71 | (1321.71 − 568.23)/10 | 75.3 |
-
-### Table 5
-
-| Day | Drug/Treatment | Purpose |
-
-| Day 1-6 | Viral clear , Antibiotics , aminovitalyte (multivitamins), Diclamax (calcium) | General health management, infection control and nutritional support |
-
+| Day | Drug / treatment | Purpose |
+|---|---|---|
+| Day 1–6 | Viral clear, antibiotics, aminovitalyte (multivitamins), Diclamax (calcium) | General health management, infection control and nutritional support |
 | Day 7 | Newcastle disease vaccine | Prevention of Newcastle disease |
-
-| Day 8-10 | Embazin forte | Treatment of susceptible parasitic infections |
-
+| Day 8–10 | Embazin forte | Treatment of susceptible parasitic infections |
 | Day 11 | Gumboro vaccine | Prevention of infectious bursal disease (IBD) |
-
-| Day 12-13 | Clean water | Post vaccination management |
-
+| Day 12–13 | Clean water | Post-vaccination management |
 | Day 14 | Newcastle disease vaccine | Prevention of Newcastle disease |
-
-| Day 15-17 | Zed multivitamin + Diclamax | Vitamin and calcium supplementation |
-
+| Day 15–17 | Zed multivitamin + Diclamax | Vitamin and calcium supplementation |
 | Day 18 | Gumboro vaccine | Prevention of infectious bursal disease (IBD) |
+| Day 19 | Clean water | Post-vaccination management |
+| Day 20–22 | Anticocci (center dicox), Enrofloxacin, Zed multivitamins | Coccidiosis control, bacterial infection treatment and nutritional support |
+| Day 28 | Second administration of Enrofloxacin | Antibacterial treatment |
 
-| Day 19 | Clean water | Post vaccination management |
-
-| Day 20-22 | Anticocci(center dicox), Enrofloxacin, Zed multivitamins | Coccidiosis control,bacterial infection treatment and Nutritional support |
-
-| Day  28 | Second admininstration of Enrofloxacin | Antibacterial treatment |
-
-### Table 6
+### Table 6. Candidate nonlinear and regression models
 
 | Model | Equation |
+|---|---|
+| Gompertz | $W(t)=Ae^{-Be^{-kt}}$ |
+| Logistic | $W(t)=\frac{A}{1+Be^{-kt}}$ |
+| von Bertalanffy | $W(t)=A(1-Be^{-kt})^3$ |
+| Richards | $W(t)=A(1+Be^{-kt})^{-1/m}$ |
+| Brody | $W(t)=A(1-Be^{-kt})$ |
+| Linear regression | $W_i=\beta_0+\beta_1t_i+\varepsilon_i$ |
+| Quadratic regression | $W_i=\beta_0+\beta_1t_i+\beta_2t_i^2+\varepsilon_i$ |
+| Cubic regression | $W_i=\beta_0+\beta_1t_i+\beta_2t_i^2+\beta_3t_i^3+\varepsilon_i$ |
 
-| Gompertz |  |
-
-| Logistic |  |
-
-| Von Bertalanffy |  |
-
-| Richards |  |
-
-| Brody |  |
-
-| Linear regression |  |
-
-| Quadratic regression |  |
-
-| Cubic regression |  |
+**Sources:** Richards (1959); Knížetová et al. (1995); Rawlings et al. (1998); Araújo et al. (2018).
