@@ -1,30 +1,52 @@
-PRE DATA SEMINAR
+<div align="center">
 
-ON
+# PRE-DATA SEMINAR
 
-COMPARISON OF DIFFERENT NONLINEAR AND REGRESSION MODELS FOR DESCRIBING GROWTH CURVES 
+### ON
 
-BY
+## COMPARISON OF DIFFERENT NONLINEAR AND REGRESSION MODELS FOR DESCRIBING GROWTH CURVES 
 
-MAKINDE, OLAITAN OREOFE
+### BY
 
-PG/24/1/0291
+**MAKINDE, OLAITAN OREOFE**
+
+`PG/24/1/0291`
 
 B.Agric (Abeokuta)
 
-DEPARTMENT OF ANIMAL BREEDING AND GENETICS
+---
 
-COLLEGE OF ANIMAL SCIENCE AND LIVESTOCK
+**DEPARTMENT OF ANIMAL BREEDING AND GENETICS**
 
-PRODUCTION
+**COLLEGE OF ANIMAL SCIENCE AND LIVESTOCK PRODUCTION**
 
-FEDERAL UNIVERSITY OF AGRICULTURE, ABEOKUTA, OGUN STATE.
+**FEDERAL UNIVERSITY OF AGRICULTURE, ABEOKUTA, OGUN STATE**
 
-NOVEMBER, 2026
+---
 
-CHAPTER ONE
+**NOVEMBER, 2026**
 
-1.0	INTRODUCTION
+</div>
+
+---
+
+> **Digital reading edition**  
+> This Markdown version is arranged for comfortable reading on GitHub. The text follows the proposal; original Word file is retained in `original/` for full formatting and document layout.
+
+## Contents
+
+- [Chapter One — Introduction](#chapter-one)
+- [Chapter Two — Literature Review](#chapter-two)
+- [Chapter Three — Materials and Methods](#chapter-three)
+- [References](#references)
+
+---
+
+---
+
+# Chapter One
+
+### **1.0** INTRODUCTION
 
 The domestic chicken (Gallus gallus domesticus) is among the most widespread farm animals in the world, with a global standing population of roughly 27 billion birds in 2023 (FAO, 2025). Biologically, growth is a complex process involving cell replication, tissue differentiation, matrix formation, cell death and other interrelated mechanisms (Fatai et al., 2023). It continues from the embryonic stage to adulthood, and its pattern can be described by growth curve models that relate body weight, or other body measurements to age.
 
@@ -36,7 +58,7 @@ Improved chicken genetics developed or adapted for Nigerian conditions include F
 
 Nonlinear growth models have been fitted to FUNAAB Alpha, its crossbreds and exotic broilers, but only over the early growth period, up to 10 weeks (Ogunpaimo et al., 2020). Most Nigerian comparisons of these genotypes have therefore concentrated on mean body weight, weight gain, feed intake, feed conversion and linear body measurements at specific ages. Few studies have compared the complete nonlinear growth trajectories of these genotypes under the same management.
 
-Justification
+### Justification
 
 Poultry production is one of the fastest-growing agricultural subsectors in Nigeria, and it remains central to national efforts to improve animal protein supply, household income and food security (Anosike et al., 2018; Adeyonu and Odozi, 2022). With a rapidly growing population and a persistent protein deficit, the sector depends on birds that perform well under tropical conditions. Indigenous chickens are well adapted to local environments but grow slowly and produce modestly (Permin and Pedersen, 2000; Hoffmann, 2005;  Sanusi and Oseni, 2019), while exotic commercial broilers grow quickly but are costly to raise and sensitive to heat stress, disease and variable feed quality (Settar et al., 1999; Deeb and Cahaner, 2001, 2002;  Son et al., 2022). This gap has motivated the development of improved, locally adapted strains such as the FUNAAB Alpha (a dual-purpose bird developed at the Federal University of Agriculture, Abeokuta) and the Noiler, both of which are increasingly adopted by smallholder and semi commercial farmers (Ajayi et al., 2020; Adamu et al., 2021;  Bamidele et al., 2020, 2022). As their popularity grows, there is a corresponding need for sound quantitative information on how these birds actually grow.
 
@@ -48,11 +70,11 @@ Despite the growing use of FUNAAB Alpha and Noiler chickens, published informati
 
 This study is therefore justified on scientific, practical and economic grounds. Scientifically, it will identify the model that best describes growth in each genotype and provide reliable parameter estimates for future research, since the choice of an appropriate growth model has been shown to depend on genotype and sex in dual-purpose chickens (Durosaro et al., 2021). Practically, it will guide farmers on optimal slaughter age, feeding regimes and flock management for each genotype. Economically, it will help reduce production costs by avoiding prolonged rearing beyond the point of diminishing returns. Finally, it will provide baseline growth information for breeders working on genetic improvement of these locally developed strains, which have been identified as suitable dual-purpose genetics for smallholder production in Nigeria (Bamidele et al., 2020, 2023). The findings will thus contribute to more efficient, evidence-based poultry production in Nigeria and the wider tropics.
 
-1.2		Broad objective
+### **1.2** Broad objective
 
 Comparison of different nonlinear and regression models for describing growth curves  in FUNAAB Alpha (dual purpose) and Noiler chickens
 
-1.3		Specific objectives
+### **1.3** Specific objectives
 
 To fit nonlinear growth models (Gompertz, Logistic, Von Bertalanffy, Richards and Brody), linear and polynomial regression models to the body weight data of FUNAAB Alpha and Noiler chickens.
 
@@ -64,13 +86,15 @@ To evaluate whether sex and genotype × sex interaction contribute to difference
 
 To compare the growth characteristics of FUNAAB Alpha and Noiler chickens based on the fitted models, to identify differences in growth rate and maturity pattern between the dual-purpose and Noiler strains.
 
-CHAPTER TWO
+---
 
-2.0	LITERATURE REVIEW
+# Chapter Two
 
-2.1	Growth patterns and growth curve characteristics in chickens
+### **2.0** LITERATURE REVIEW
 
-2.1.1	 Concept and biological basis of growth
+### **2.1** Growth patterns and growth curve characteristics in chickens
+
+#### **2.1.1** Concept and biological basis of growth
 
 Growth is a continuous biological process characterized by age related changes in body size, body weight and tissue development. In chickens, these changes involve the coordinated development of skeletal, muscular, adipose and visceral tissues from the embryonic stage through the post-hatch period until maturity. The pattern of growth is influenced by the interaction between the bird's genetic potential and environmental conditions. Factors such as genotype, sex, nutrition, temperature, stocking density, health status and management practices can therefore produce differences in growth rate and final body size among birds. Consequently, body weight measured at a particular age provides information on performance at that point but does not adequately explain the pattern of growth throughout the production period. Repeated measurements across different ages are therefore important for describing the trajectory of growth and identifying differences in growth patterns among chicken genotypes.
 
@@ -82,37 +106,37 @@ These parameters make growth curve models useful not only for describing growth 
 
 The application of growth models is particularly relevant in commercial poultry production because differences in growth trajectory can influence the efficiency with which birds utilize feed and reach market weight. A genotype that reaches a desirable market weight earlier may have different production requirements from one with a slower growth trajectory. Therefore, examining the complete growth pattern rather than comparing body weight at a single age can provide a more comprehensive basis for understanding genetic differences in growth performance. This variation also suggests that competing growth functions should be evaluated within the specific chicken populations and production conditions under study, rather than assuming that a model suitable for one population will best describe another (Fatai et al., 2023).
 
-2.1.2		Sigmoid pattern of chicken growth
+#### **2.1.2** Sigmoid pattern of chicken growth
 
 Chicken growth is commonly described by a sigmoid, or S-shaped, curve. During the earliest period after hatch, the increase in body weight is relatively slow. This is followed by an accelerating phase, during which the absolute rate of gain rises with age. The curve then reaches an inflection point, defined as the age at which absolute growth rate is maximal. Thereafter, growth decelerates as the bird approaches its mature or asymptotic weight. Nonlinear growth functions summarize this biological pattern and make it possible to estimate parameters that cannot be obtained directly from one weekly body-weight record (Aggrey, 2002; Narinç et al., 2017).
 
 The exact shape of the curve differs among breeds and strains. Commercial broilers have undergone intense selection for rapid early growth and feed efficiency, whereas dual-purpose and tropically adapted chickens may show slower early growth, different maturation rates and lower estimated asymptotic weights. This means that the genotype with the largest body weight at six or eight weeks is not necessarily the genotype with the largest predicted mature size, nor will all genotypes attain their maximum growth rate at the same age.
 
-2.1.3 	Factors affecting chickens growth
+#### **2.1.3** Factors affecting chickens growth
 
 Growth of chickens is influenced by a combination of genetic, environmental, nutritional and health related factors.
 
-2.1.3.1 	Genetics (strain and sex)
+##### **2.1.3.1** Genetics (strain and sex)
 
 Genetic selection has played a major role in the substantial improvement in growth performance observed in modern broiler chickens. Long-term comparisons of broilers selected at different periods have demonstrated remarkable increases in growth rate, accompanied by improvements in feed efficiency, indicating the considerable contribution of genetic improvement to modern broiler production (Havenstein et al., 2003; Zuidhof et al., 2014). The improvement observed over successive generations has been associated primarily with genetic selection, although advances in nutrition and feeding practices have also contributed to the overall performance of modern broilers (Havenstein et al., 2003).
 
 Growth characteristics, however, are not uniform across chicken populations. Differences in growth curve parameters have been observed among strains and between sexes, suggesting that genetic background and sex can influence both the rate and pattern of body weight development (Aggrey, 2002; Topal and Bolukbasi, 2008). These differences may become more pronounced as birds progress through later stages of growth, when genetic differences in mature body size and growth potential become increasingly expressed (Zuidhof et al., 2014). Therefore, evaluating growth through repeated measurements and growth curve parameters provides a more informative assessment of genetic differences than comparing body weight at a single age.
 
-2.1.3.2	 Environment: temperature and stocking density
+##### **2.1.3.2** Environment: temperature and stocking density
 
 Environmental conditions are important determinants of growth performance in chickens because they influence feed intake, nutrient utilization, physiological responses and, ultimately, body weight gain. Among the environmental factors, high ambient temperature and excessive stocking density can impose considerable stress on broilers and interfere with normal growth. Heat stress can reduce voluntary feed consumption and impair nutrient utilization as birds attempt to regulate their body temperature, thereby limiting the nutrients available for tissue growth. Similarly, overcrowding can restrict air movement, increase competition for resources and intensify physiological stress.
 
 Experimental evidence indicates that these factors can act individually or together to reduce growth performance. For example, broilers reared under high stocking densities of 23 and 26 birds/m² and exposed to high ambient temperature showed reduced body weight, together with increases in rectal temperature and corticosterone concentration, indicating greater physiological stress (Son et al., 2022). Findings from other studies also show that exposure to elevated temperature and increased stocking density can reduce feed intake and weight gain, with the negative effects of high stocking density becoming evident in final body weight at market age. These findings demonstrate that observed differences in growth among chicken genotypes should be interpreted alongside the environmental conditions under which the birds are reared, since management and climatic factors can influence the expression of their genetic growth potential.
 
-2.1.3.3	 Nutrition and feed intake
+##### **2.1.3.3** Nutrition and feed intake
 
 Nutrition determines whether a bird can express its genetic growth potential, and the performance of modern strains depends on both selection and the diets they are fed (Havenstein et al., 2003b). Environmental stress also depresses growth: finisher broilers kept at high stocking density under high temperature had significantly lower body weight (Son et al., 2022).
 
-2.1.3.4	 Health and management
+##### **2.1.3.4** Health and management
 
 Disease, litter quality and general husbandry also influence growth. High stocking density has been associated with higher litter moisture, ammonia levels and footpad lesions, which may compromise welfare and reduce mobility and feed access. In addition, selection for rapid growth has been linked to leg disorders and cardiovascular problems in fast-growing broilers, so growth rate and health status are closely connected.
 
-2.1.4		Economic importance of chicken growth
+#### **2.1.4** Economic importance of chicken growth
 
 Growth rate is a fundamental factor influencing the biological and economic efficiency of poultry production because it determines how quickly chickens convert available resources into marketable body weight. Birds that grow rapidly and efficiently can attain market weight within a shorter production period, allowing producers to recover invested capital earlier and potentially complete more production cycles within a year. This has become particularly important in broiler production, where sustained genetic selection has resulted in substantial improvements in growth and feed efficiency. For example, comparisons of broilers from 1957 and 2005 showed that growth rate increased by more than 400%, while feed conversion ratio decreased by approximately 50%, demonstrating the extent to which genetic improvement has enhanced the efficiency of meat production (Zuidhof et al., 2014).
 
@@ -126,9 +150,9 @@ However, chickens do not maintain the same rate of growth throughout their produ
 
 For this reason, understanding the trajectory of growth is important for identifying differences in the growth potential of chicken genotypes. Growth modelling provides a means of describing these changes mathematically and of estimating parameters that characterize the pattern and rate of growth over time. Such information can help distinguish genotypes according to their growth characteristics and provide a more comprehensive assessment than final body weight alone. Taken together, this literature demonstrates a clear connection between growth rate, feed utilization, production costs, market weight, and profitability. Under current market conditions, where broiler meat can command approximately ₦3,500 per kilogram, understanding how quickly and efficiently different genotypes accumulate body weight is increasingly relevant to both producers and researchers.
 
-2.2 		Description of the study genotypes
+### **2.2** Description of the study genotypes
 
-2.2.1 	Growth performance of FUNAAB Alpha chickens
+#### **2.2.1** Growth performance of FUNAAB Alpha chickens
 
 Crossbreeding is a mating system in which individuals from two different breeds are mated so that the offspring combine desirable traits from both parents. Its central aim is to exploit heterosis (hybrid vigour), so that the progeny perform better and are worth more economically than either parental breed (Hanafi and Iraqi, 2002). In poultry, it is widely used to improve economically important traits, especially growth rate, feed efficiency and meat quality, and much effort has gone into developing broiler strains that deliver good-quality meat at a lower cost of production (Kemp and Kenny, 2003). Breeders have also used hybrid vigour extensively to obtain progeny whose phenotypic performance exceeds that of the parent populations.
 
@@ -138,7 +162,7 @@ Nigerian indigenous chickens tolerate harsh climates, resist endemic diseases an
 
 To address these shortcomings, scientists in the Department of Animal Breeding and Genetics, Federal University of Agriculture, Abeokuta (FUNAAB), developed the FUNAAB Alpha chicken as an improved Nigerian indigenous chicken with higher productivity and the adaptive qualities of its parent stock retained (Udoh, 2014). The breed has broiler and dual-purpose lines, and each line includes normal-feathered, naked-neck and frizzle-feathered genotypes. Following extensive evaluation, the Federal Government of Nigeria approved it for distribution as an improved, locally adapted, dual purpose chicken for both rural and commercial production (Ogunpaimo et al., 2020). Work to improve its productivity further is still in progress.
 
-2.2.2 	Growth performance of Noiler chickens
+#### **2.2.2** Growth performance of Noiler chickens
 
 The Noiler is an improved dual purpose chicken developed in Nigeria. In the African Chicken Genetic Gains (ACGG) project it was evaluated together with three other locally developed chickens (FUNAAB Alpha, Shika-Brown and Fulani) and two tropically adapted foreign breeds, Kuroiler from India and Sasso from France (Ajayi et al., 2020). Birds of this kind are intended to add genes for higher productivity to the hardiness of locally adapted chickens, in contrast to commercial broilers and layers (Bamidele et al., 2020).
 
@@ -146,7 +170,7 @@ In an on station evaluation, Noiler, Kuroiler and Sasso grew faster than FUNAAB 
 
 Under smallholder conditions, Noiler males outgrew the other five breeds between 6 and 14 weeks of age, with an unusually large gain between 10 and 14 weeks, although by 18 weeks their weight did not differ statistically from Kuroiler or Sasso. During the growing phase (6-18 weeks), this was accompanied by lower survivability than Fulani, FUNAAB Alpha and Shika-Brown (Ajayi et al., 2020). In a later semi-scavenging study, Noiler birds reached 1,927g at 21 weeks against 1,792g for FUNAAB Alpha, a difference that was not statistically significant, while FUNAAB Alpha survived better (Bamidele et al., 2022).
 
-2.2.4 Comparative growth performance of improved tropical and commercial chickens
+#### **2.2.4** Comparative growth performance of improved tropical and commercial chickens
 
 Genetic improvement has contributed substantially to the growth performance of chickens adapted to tropical production systems. Comparative evaluations have shown that improved tropical chicken genotypes can achieve substantially greater body weight gains than unimproved local populations. Under on station conditions, improved genotypes such as FUNAAB Alpha and Noiler demonstrated markedly higher body weight gains than Fulani chickens by 42 days of age, with the relative advantage varying among genotypes (Bamidele et al., 2020). Similar differences have also been observed under smallholder production conditions, where improved chicken breeds exhibited superior growth and laying performance compared with local chickens (Ajayi et al., 2020). These findings indicate that genetic improvement can enhance productive performance under both controlled and farmer-managed environments, although the magnitude of the response may vary according to genotype and production conditions.
 
@@ -160,7 +184,7 @@ Differences have also been observed between locally developed genotypes, with No
 
 Taken together, this literature demonstrates considerable variation in growth trajectories and survivability among chicken genotypes. Commercial broilers such as Cobb 500 and Arbor Acres generally exhibit high growth potential, whereas improved tropical genotypes such as FUNAAB Alpha and Noiler combine moderate growth performance with characteristics associated with adaptation to less intensive production systems. Indigenous chickens generally exhibit slower growth but may possess adaptive advantages under challenging environments. The performance differences observed across studies suggest that genotype evaluation should consider not only body weight gain but also survivability and the production environment in which the birds are reared. This is particularly important for tropical and smallholder systems, where adaptation, resilience and dual-purpose characteristics may be relevant alongside rapid growth (Ajayi et al., 2020; Bamidele et al., 2020).
 
-2.3 		Intensive management system of chicken
+### **2.3** Intensive management system of chicken
 
 Chicken growth reflects how an animal’s genetic potential is expressed under the conditions in which it is raised. Modern broiler strains have been bred heavily for rapid growth: between 1957 and 2005, commercial broiler growth rate increased by more than 400% and feed conversion ratio fell by 50% when the strains were compared under the same modern feeding programme (Zuidhof et al., 2014). Genetic selection has been credited with 85-90% of such improvements, with the remainder attributed to environmental factors (Havenstein et al., 2003). Realising this potential therefore depends on the production system, which is the focus of this section. It reviews intensive management and the influence of nutrition, housing and health on growth, the genotype by environment (G×E) interaction, and the reasons for evaluating all genotypes within a single production system. The core elements of intensive broiler management are laid out in commercial guides such as the Ross Broiler Management Handbook (Aviagen, 2018).
 
@@ -174,13 +198,13 @@ Flock husbandry (brooding, water supply, stocking density and record keeping).
 
 A fifth element is the bird’s genotype, because the management package has to suit the strain being reared (Aviagen, 2018). When these elements work together, birds can reach much of their genetic potential. If any one of them is weak, it limits growth (Aviagen, 2018).
 
-2.3.1 	Meaning and components of intensive management
+#### **2.3.1** Meaning and components of intensive management
 
 Poultry production systems differ in the degree of environmental control, resource input and exposure of birds to external conditions. Intensive production is characterized by confinement, relatively high stocking densities and greater control over feeding, housing, environmental conditions and health management. This system is widely used in commercial broiler production because it allows producers to maximize output within a limited production area and improve production efficiency (Averós and Estevez, 2018). In contrast, extensive and semi-intensive systems provide birds with varying degrees of outdoor access and generally involve lower levels of environmental control and resource input. As a result, birds kept under these systems may experience greater fluctuations in climatic conditions and increased exposure to predators, environmental and disease-related challenges (Singh and Cowieson, 2013).
 
 The production system can therefore influence the expression of growth performance through its effects on nutrition, environmental conditions, stocking density, health and general management. However, these factors do not operate independently. Their combined effects can influence both productive performance and bird welfare, making the relationship between production system and poultry performance complex (Averós and Estevez, 2018). This interaction is particularly relevant when comparing chicken genotypes because the performance and survival of a genotype can differ with the environment and management in which it is kept (Ajayi et al., 2020; Bamidele et al., 2020, 2022). Consequently, assessment of growth performance should consider not only the genetic characteristics of the birds but also the production system.
 
-2.3.2 	Management factors affecting chicken growth
+#### **2.3.2** Management factors affecting chicken growth
 
 Management practices play an important role in determining the extent to which the genetic growth potential of chickens is expressed. Among these factors, nutrition is particularly important because feed represents a major component of poultry production costs and provides the energy, amino acids, minerals and vitamins required for tissue development and maintenance. The nutritional requirements of birds vary with age and genetic growth potential, meaning that diets formulated for slower growing chickens may not adequately support the rapid growth of modern broiler genotypes. In addition to nutrient composition, feed intake, feed quality, physical form of the diet and access to clean water can influence growth performance (Aviagen, 2018).
 
@@ -192,7 +216,7 @@ Health status represents another important component of growth performance becau
 
 Overall, the literature indicates that nutrition, housing and health should be viewed as interconnected components of poultry management rather than isolated factors. Adequate nutrition may not translate into maximum growth when birds are exposed to heat stress, poor ventilation, excessive stocking density or disease challenges. Similarly, favourable housing conditions and good health management can improve the efficiency with which dietary nutrients are utilized for growth. Thus, differences observed in the growth performance of chicken genotypes may reflect not only their genetic potential but also the interaction between genotype and the nutritional, environmental and health conditions under which they are reared.
 
-2.3.3		Genotype by environment (G×E) interaction
+#### **2.3.3** Genotype by environment (G×E) interaction
 
 Phenotypic performance in chickens results from the combined effects of genetic constitution, environmental conditions and the interaction between them. A genotype × environment interaction (G×E) occurs when different genotypes respond differently to changes in environmental conditions, such that the magnitude of their performance differences changes or their relative ranking is altered across environments (Falconer and Mackay, 1996).
 
@@ -202,21 +226,21 @@ Evidence from poultry studies demonstrates that growth performance can change su
 
 G×E may also occur when the environment in which breeding stock are evaluated differs from the conditions under which their offspring are commercially produced. Genetic correlations of about 0.5 between body weight in biosecure breeding and commercial production environments indicate that the performance of selection candidates may not accurately predict their performance under commercial conditions (Chu et al., 2019). In addition, environmental factors such as feeding level and parasite infestation can act together, making it difficult to attribute differences in genotype performance to a single environmental factor (Erdem and Savaş, 2021). Therefore, the superiority of a particular chicken genotype should not be considered universally applicable across all production conditions. Instead, genotype performance should be evaluated in relation to the specific environmental and management conditions under which the birds are reared.
 
-2.3.4		Rational for evaluating all genotypes under onene system
+#### **2.3.4** Rational for evaluating all genotypes under onene system
 
 When genotypes are compared, any difference in performance may come from genetic differences, environmental differences, or their interaction. If genotypes are raised in different houses, seasons or feeding programmes, genetic and environmental effects are confounded and the comparison is invalid. Rearing all genotypes under one system ensures that the environment is common to all birds. That system has the same feed, housing, lighting, stocking density, water supply and health programme. Observed differences in growth can then be attributed to genotype. This is the basis of a completely randomised design, in which genotypes are the treatments and the house conditions are held constant.
 
 A common system also removes the influence of management skill and micro environment differences. It allows fair comparison of growth, feed intake and feed efficiency, and it permits valid estimation of genetic parameters such as heritability and breeding values. It also gives a standard reference condition against which the same genotypes can later be tested in other environments to detect G×E. Because G×E is well documented (Settar et al., 1999; Deeb and Cahaner, 2002; Chu et al., 2019), results from a single system must be interpreted with care. They describe the ranking of genotypes under that system and may not transfer to conditions with different temperature, nutrition or disease pressure. Evaluation under one intensive system is best seen as a controlled first step that gives an unbiased comparison. Where possible, it should be followed by testing across the environments in which the birds will eventually be produced.
 
-2.4		Genotype, Sex and Genotype by sex effects
+### **2.4** Genotype, Sex and Genotype by sex effects
 
-2.4.1		Genotype effects on chicken growth curve
+#### **2.4.1** Genotype effects on chicken growth curve
 
 Chicken growth is commonly modelled with non-linear functions, and the Gompertz is one of the best-fitting options (Salvador et al., 2025). Such functions summarise how weight changes with age using a small set of parameters that have biological meaning (Salvador et al., 2025). The Laird form of the Gompertz function has been applied to the individual growth curves of 7,143 chickens, and line significantly affected every parameter (Mignon-Grasteau et al., 1999). The parameters were also moderately to highly heritable, with heritabilities from 0.31 to 0.54, estimated from a larger dataset of 38,474 animals (Mignon-Grasteau et al., 1999). Because the parameters differ among lines and are heritable, selection on them could modify the growth curve, including the difference between sexes in precocity and hence weight at a given age (Mignon-Grasteau et al., 1999). A later selection experiment supported this: selection for higher body weight at 8 weeks increased initial specific growth rate and maturation rate and decreased age at inflection (Mignon-Grasteau et al., 2001).
 
 Later work reports similar differences among genotypes. Two slow-growing strains, Hubbard S757 and Hubbard Grey Barred JA, reared organically, were both described closely by the Gompertz and Logistic models (R² above 0.99), and each model detected a significant difference in instantaneous growth rate between the strains (Eleroğlu et al., 2014). In Nigeria, the Gompertz model was fitted to the weekly weights of 417 chickens of the Naked Neck, FUNAAB Alpha, and Giriraja genotypes to study seasonal variation in growth curve parameters of males and females, and the early wet season supported higher weight gain in all three genotypes (Sabe et al., 2017). Together, these results suggest that growth curve parameters differ among genotypes and vary with season, so a genotype’s growth curve is not fixed (Sabe et al., 2017).
 
-2.4.2		Sex effect on growth curve
+#### **2.4.2** Sex effect on growth curve
 
 Sex differences in body weight are well documented in chickens. When the Laird form of the Gompertz function was fitted to individual growth curves, sex significantly affected every parameter (Mignon-Grasteau et al., 1999). Compared with females, males had higher L (initial specific growth rate), BW0 (estimated hatching weight), and age and weight at inflection, together with a lower maturation rate K (Mignon-Grasteau et al., 1999). This pattern is consistent with males maturing later and reaching a larger mature size, whereas females mature sooner.
 
@@ -224,7 +248,7 @@ Other populations show comparable differences. In Castellana Negra chickens, a l
 
 Because the sexes follow different growth curves, they reach a given weight at different ages, so feeding programmes, slaughter age, and flock uniformity may need to take sex into account (Salvador et al., 2025b).
 
-2.4.3 	Genotype × sex interaction
+#### **2.4.3** Genotype × sex interaction
 
 Genotype by sex (G×S) interaction exists when the difference between sexes changes from one genotype to another. In a linear model this is the interaction term in
 
@@ -236,7 +260,7 @@ At the genetic level, the interaction is measured by the genetic correlation bet
 
 Where: (y) = observed response variable; () = overall mean; () = effect of the ith genotype; () = effect of the jth sex;  = interaction effect between the ith genotype and the jth sex; and  = random error associated with the kth observation within the ith genotype and jth sex.
 
-2.4.4 	Implication for Modelling and Breeding
+#### **2.4.4** Implication for Modelling and Breeding
 
 Modelling is important because sex changes growth curve parameters, the data for males and females should not be pooled before this has been tested. Curves should be fitted with sex as a factor, and equality of parameters between the sexes should be tested formally, for instance with a likelihood ratio test (Salvador et al., 2025b). Comparing parameter estimates alone does not test whether differences exceed chance variation, so formal tests of parameter equality are needed (Salvador et al., 2025b). Analyses of growth data should therefore include genotype, sex, and their interaction as fixed effects. When the interaction is significant, the effect of each factor is better described within each level of the other factor than as a single averaged main effect (MedCalc Software Ltd, n.d.). Where birds are measured at several ages, non-linear mixed models with random effects allow individual variation in curve parameters to be estimated, and adding random effects reduced residual variance by more than half in one study of naturalised chickens (Ibiapina Neto et al., 2020).
 
@@ -244,11 +268,11 @@ In poultry breeding, growth curve parameters are heritable and differ among line
 
 Furthermore, information obtained from growth models can assist ain developing appropriate feeding and management strategies. Male and female broilers differ in growth performance and nutrient requirements, with males needing more crude protein, which supports sex-specific feeding (England et al., 2023). The most profitable slaughter age also differs by sex. In one study of 2,550 broilers, profitability indices peaked at about day 40 in males, but kept rising up to day 42 in females (Samarakoon and Samarasinghe, 2012). Rearing the sexes separately may improve pen uniformity, although the evidence on whether it improves performance is not yet clear (England et al., 2023). For evaluation trials such as this one, the sex of every bird should be recorded and sexes balanced across genotypes, because sex differences add variation to nutrition trials and would otherwise be confounded with the genotype effect (England et al., 2023).
 
-2.4 	Nonlinear growth model in chickens
+### **2.4** Nonlinear growth model in chickens
 
 Body weight in chickens typically follows a sigmoid growth pattern, characterised by slow initial growth, an accelerating phase, a point of maximum growth rate, a decelerating phase, and an eventual approach to mature body weight (Sanusi and Oseni, 2019). Mathematical functions fitted to this pattern are referred to as growth models, which summarise longitudinal weight measurements into a few biologically interpretable parameters (Narinç et al., 2017). The Gompertz, logistic, Richards, and von Bertalanffy functions are among the most commonly used nonlinear models for describing poultry growth patterns (Narinç et al., 2017). These models are nonlinear, sigmoid-shaped, and semi-mechanistic, with applications in identifying the best-fitting growth function, comparing growth patterns among poultry species or experimental groups, and estimating genetic parameters for growth-curve characteristics (Narinç et al., 2017).
 
-2.4.1	 	Biological basis of nonlinear growth functions
+#### **2.4.1** Biological basis of nonlinear growth functions
 
 Growth is the net result of cell replication, tissue differentiation, matrix formation, cell death and other interrelated processes (Fatai et al., 2023). Because tissue accretion is constrained by the genetic size potential of the bird and by the supply of nutrients and energy, the absolute growth rate cannot rise indefinitely. It reaches a maximum and then declines toward zero as the bird approaches mature size (Fitzhugh, 1976; Ricklefs, 1985). Different functions encode this constraint through different differential equations:
 
@@ -288,7 +312,7 @@ dW/dt = instantaneous rate of change in body weight with respect to age.
 
 Gompertz is the limit of the Richards form as m → 0; the logistic is m = 1; von Bertalanffy is m = −1/3; and the Brody (monomolecular) curve is m = −1 (Tjørve, 2010, 2017). In practice the biological meaning is partly empirical. Growth functions are descriptive tools, and multiple parameterisations of the same curve exist, meaning that parameter estimates from different studies may not be directly comparable without appropriate standardisation . The Gompertz function has been applied to describe overall body growth, chemical growth, feather growth and breast muscle development in broiler chickens, with parameters such as mature weight, maturation rate and the age at maximum growth rate used to characterise growth patterns across genotypes (Gous et al., 1999). These findings highlight the importance of biologically interpretable parameters when modelling poultry growth, particularly when estimating mature weight from limited observation periods (Gous et al., 1999;  Tjørve, 2017).
 
-2.4.2		General interpretation of growth curve parameters
+#### **2.4.2** General interpretation of growth curve parameters
 
 Two important considerations apply when interpreting growth-curve parameters. First, the parameter K represents the relative maturation rate and is often inversely associated with the asymptotic weight (A), such that larger-framed, later-maturing animals tend to exhibit lower maturation rates (Fitzhugh, 1976). Similarly, lower values of (k) have been associated with longer growth periods and higher mature body weights (Fatai et al., 2023). Second, parameter estimates are strongly dependent on the growth function selected. For male FUNAAB Alpha chickens measured up to 20 weeks of age, the estimated asymptotic weights were 3,056.3 g for the Gompertz model, 2,050.8g for the logistic model, and 3,716.6g for the von Bertalanffy model, with corresponding maturation-rate estimates of 0.0860, 0.2002, and 0.0463 per week, respectively (Bashiru et al., 2019b). These results illustrate the variation in estimated growth parameters across models fitted to the same dataset and show an inverse pattern between the estimated asymptotic weight and maturation rate in these particular results (Fitzhugh, 1976; Bashiru et al., 2019b).
 
@@ -296,7 +320,7 @@ Table 1.1 interpretation of the parameters in the forms most used in the Nigeria
 
 Parameter definitions and model equations are as given in poultry growth-curve studies (Knížetová et al., 1995; Araújo et al., 2018).
 
-2.4.3		Logistic model
+#### **2.4.3** Logistic model
 
 The logistic curve is symmetric about its inflection point, so the fastest growth necessarily occurs at exactly half of mature weight. This can be restrictive for chickens, in which peak growth often occurs at a smaller fraction of mature weight.
 
@@ -304,7 +328,7 @@ The logistic function has been used in poultry growth modelling both as a standa
 
 The inflection occurs at  , where  , and the maximum absolute growth rate is .
 
-2.4.4 	Gompertz model
+#### **2.4.4** Gompertz model
 
 The Gompertz function is consistently identified as one of the most suitable three parameter nonlinear models for describing poultry growth. Its predictive value has been demonstrated against machine learning alternatives, such as artificial neural networks, in broiler growth prediction (Roush et al., 2006). It has also shown a fitting advantage over other sigmoid models in commercial and non commercial lines. In Italian and Athens Canadian chickens, it outperformed the logistic and Richards functions (Teleken et al., 2017).
 
@@ -326,7 +350,7 @@ k = growth-rate parameter
 
 The Gompertz function exhibits an asymmetric sigmoid growth pattern, with the point of maximum growth rate occurring at approximately 36.8% of the asymptotic weight, a characteristic that may make it more suitable than the logistic function for describing growth in certain poultry populations. Differences in parameterisation are important when comparing growth curve estimates across studies because parameter definitions and values may vary depending on the formulation adopted (Tjørve, 2017).
 
-2.4.5 	Richard model
+#### **2.4.5** Richard model
 
 Richards (1959) proposed a flexible function with a free shape parameter. A common parameterisation is
 
@@ -358,7 +382,7 @@ t = age of the chicken.
 
 m = shape parameter controlling the curve's form.
 
-2.4.6		Brody model
+#### **2.4.6** Brody model
 
 It is a monomolecular (Mitscherlich-type) curve with no inflection: the growth rate is maximal at hatching, , The absolute growth rate declines after its initial value, and hatch weight is expressed as . Brody type curves describe the decelerating, post-inflection phase of growth well but cannot represent the early accelerating phase of chicken growth. Consequently, they are best suited to datasets that begin after the inflection point or to species and genetic lines that attain maximum growth very early. Brody and Mitscherlich functions have been fitted to FUNAAB Alpha and Yoruba chickens (Fatai et al., 2023), while the Brody model has produced the lowest maturity rate estimate among the models evaluated in Cobb 500, Marshall and Noiler chickens (Isa and Joel, 2026).
 
@@ -374,9 +398,9 @@ Maximum absolute growth rate
 
 (the inflection occurs at a positive age only when B > 1/3). It has been reported as the best fit for several indigenous chickens in Kenya, Ghana, Turkey and Nigeria (Bashiru et al., 2019b; Fatai et al., 2023), including FUNAAB Alpha.
 
-2.5	Model selection and goodness of fit
+### **2.5** Model selection and goodness of fit
 
-2.5.1	        Coefficient of Determination (R2)
+#### **2.5.1** Coefficient of Determination (R2)
 
 In linear models with an intercept, SST = SSR + SSE, so R² lies between 0 and 1 and is the proportion of variance explained. The decomposition of the total sum of squares does not generally hold in nonlinear regression, which can make the coefficient of determination R2 misleading (Kvålseth, 1985). Monte Carlo simulations have also demonstrated that R2 is an inadequate measure of goodness of fit for nonlinear models (Spiess and Neumeyer, 2010). This limitation is evident in poultry growth studies, where R2 values ranged from 0.987 to 0.999 across models fitted to Yoruba chickens (Fatai et al., 2023) and from 0.992 to 0.999 in Italian local chickens (Rizzi et al., 2013), providing little discrimination between models that were ranked differently by other selection criteria. Similarly, in male Noiler chickens, the R2 values for the Gompertz 0.8122 and logistic (0.8103) models differed by only 0.0019, whereas their corresponding Akaike Information Criterion (AIC) values 6927.5 and 6933.0, respectively differed by 5.5 units (Adamu et al., 2021). Therefore, R2 is best reported as a descriptive measure of model fit rather than used as the sole criterion for model selection.
 
@@ -386,11 +410,11 @@ The coefficient of determination is   and
 
 R2 = coefficient of determination , SSE = sum of squared errors, SST = total sum of squares.
 
-2.5.2 	Residual mean square and root mean square error (RMS/RMSE)
+#### **2.5.2** Residual mean square and root mean square error (RMS/RMSE)
 
 with    Some authors divide by n rather than (n-p); therefore, the definition used should be explicitly stated because the two differ when the number of parameters is large relative to the sample size.
 
-2.5.3 	Akaike information criterion (AIC)
+#### **2.5.3** Akaike information criterion (AIC)
 
 Models have been compared using R² together with the residual standard deviation (Aggrey, 2002), while a broader set of criteria, namely R², AIC, BIC, RMSE, and MSE, has been applied jointly in more recent work (Isa and Joel, 2026). Because RMSE is reported in the same units as the response variable, it is directly interpretable; an RMSE of 80 g, for instance, means that predictions deviate from observed values by about 80 g in root-mean-square terms. It is, however, dependent on the scale of the data. Unlike AIC and BIC, it does not explicitly penalise model complexity, except indirectly where the (n − p) divisor is used in its calculation.
 
@@ -408,17 +432,17 @@ so  and the weights are 0.940 for the Gompertz and 0.060 for the logistic. Both 
 
 Two practical considerations are important. First, absolute AIC values depend on the dataset and sample size, so comparisons should generally be restricted to models fitted to the same data. For example, AIC values were approximately 44 to 54 when mean weights at selected ages were modelled (Bashiru et al., 2019a, 2019b), compared with approximately 6,900 when individual weights were modelled (Adamu et al., 2021). Second, the mathematical expression must be specified correctly.
 
-2.5.4 	Bayesian information criterion (BIC)
+#### **2.5.4** Bayesian information criterion (BIC)
 
 Because ln(n) exceeds 2 once n ≥ 8, BIC, which was derived by Schwarz (1978), penalises additional parameters more heavily than AIC and tends to favour simpler models. This is relevant when a four parameter Richards model competes with three parameter models: in the FUNAAB Alpha data, the Richards model’s extra parameter was penalised (Bashiru et al., 2019b). BIC differences of 2 to 6 are interpreted as positive evidence for the model with the lower BIC, 6-10 as strong evidence, and above 10 as very strong evidence (Kass and Raftery, 1995). Both criteria rely on likelihoods that assume independent errors, an assumption violated by repeated weight measurements on the same bird. Mixed effects formulations that add bird-level random parameters address this problem and substantially improved accuracy in mule ducks, reducing the residual standard deviation by about 55% (Aggrey, 2009; Vitezica et al., 2010; Galeano Vasco et al., 2014).
 
-2.5.5         Residual diagnostics and biological plausibility
+#### **2.5.5** Residual diagnostics and biological plausibility
 
 Statistical criteria rank models but do not show whether the best model is adequate. Residuals should be plotted against age and fitted values to detect systematic lack of fit, increasing variance with body size (often handled by weighting or by a variance function), and serial correlation among successive weights from the same bird (Durbin and Watson, 1950). Parameter correlation and curvature should also be examined, since high intrinsic or parameter effects non linearity makes estimates and their standard errors unreliable (Ratkowsky, 1983; Bates and Watts, 1988). Convergence failure, as seen for the Richards function (Fatai et al., 2023), is itself diagnostic information.
 
 Biological plausibility is a separate test. Useful checks are whether the predicted asymptote is consistent with observed mature weights, whether predicted hatch weight is close to observed day-old weight, whether the inflection age lies within the observed age range, and whether k > 0 and no predicted weights are negative. Several studies fail some of these checks even when R² is above 0.99. For example, all models overestimated the initial weight of FUNAAB Alpha chickens except the Brody (Fatai et al., 2023). Choosing a parameterisation that returns realistic values is therefore emphasised in the literature (Tjørve, 2017).
 
-2.6 		Biological and mathematical foundations of growth curves
+### **2.6** Biological and mathematical foundations of growth curves
 
 The quantities of practical interest are derived from the fitted parameters. Table 2.0 gives the formulas
 
@@ -428,23 +452,23 @@ source: (Araújo et al., 2018)
 
 Where: A = Asymptotic body weight; B = Integration constant; k = Growth rate parameter; W₀ = Body weight at hatch; W* = Body weight at the inflection point; t* = Age at the inflection point; AGR = Average Growth Rate; e = Euler’s number; and ln = Natural logarithm.
 
-2.6.1	 	Asymptotic Body weight
+#### **2.6.1** Asymptotic Body weight
 
 The asymptote A is the weight toward which the curve tends, interpreted as mature body weight. It is the parameter most sensitive to model choice and to the age range of the data. For male FUNAAB Alpha chickens weighed to 20 weeks, estimates ranged from 2050.8 to 3716.6 g, and for females from 1591.7 to 3330.6 g, depending on the function (Bashiru et al., 2019b). In the companion spline study with the same design (300 chicks, hatch to 20 weeks), the observed 20-week least-squares means were 1894.8 g for males and 1321.7 g for females (Bashiru et al., 2019a). If those are the same birds, the Gompertz asymptote is 1.61 times the observed male weight (3056.3/1894.8) and 1.91 times the observed female weight (2521.0/1321.7); the von Bertalanffy ratios are 1.96 and 2.52, and only the logistic is close (1.08 and 1.20). Mature weights of 1.6–2.1 kg at 20 weeks were the breeding target for the breed (Bashiru et al., 2019a). A similar conclusion was reached for chickens weighed to 8 weeks, with a recommendation to extend records to 12 weeks or longer to validate the asymptote (Isa and Joel, 2026). Asymptotic weight remains useful for comparing strains, for example the Marshall strain’s asymptote above 3000 g (Isa and Joel, 2026), provided the same function and age range are used for each strain.
 
-2.6.2	 	Maturation age
+#### **2.6.2** Maturation age
 
 The rate constant k indicates how quickly the bird approaches A, and it is the basis for age at maturity. Because a function reaches A only asymptotically, maturity is operationally defined as the age at which a stated fraction, usually 95%, of A is attained. Applying this to the male FUNAAB Alpha estimates gives 28.4 weeks (logistic), 49.3 weeks (Gompertz) and 82.0 weeks (von Bertalanffy). These ages are far beyond the 20-week record, and the spread across models is nearly threefold, which shows that maturity age is poorly identified when data stop before the plateau. Maturity in this sense is body-size maturity; it is not sexual maturity, which depends on separate physiological and management factors. Lower k corresponds to a longer growth period and higher mature weight (Fatai et al., 2023; Fitzhugh, 1976).
 
-2.6.3	 	Age of inflection
+#### **2.6.3** Age of inflection
 
 The inflection marks the point of maximum absolute growth rate, after which gain per week falls. It is closer to the data than the asymptote and is therefore estimated more reliably. Reported values include 13.30–17.63 weeks (males) and 14.23–19.94 weeks (females) for FUNAAB Alpha chickens (Bashiru et al., 2019b), with the Richards function giving the earliest and the von Bertalanffy the latest age, and 5.5 weeks (Cobb 500, Gompertz) to 8 weeks (Marshall, Weibull) for broilers and Noiler chickens reared to 56 days (Isa and Joel, 2026). Males had higher weights at inflection and earlier inflection ages than females in all models (Bashiru et al., 2019b).
 
-2.6.4	 	Production significance of growth parameters
+#### **2.6.4** Production significance of growth parameters
 
 Growth parameters support several decisions. The age at inflection and the maximum growth rate identify when feed intake and nutrient density should peak and when diets can be changed, and strain-specific critical growth ages have been proposed as a guide to feeding strategies for Cobb 500, Marshall and Noiler birds (Isa and Joel, 2026). Fitted curves also predict weight at any age, which supports market weight planning and the matching of slaughter age to target weight; this is especially relevant to a dual-purpose bird that must serve as both a meat and an egg type. In addition, curve parameters feed into factorial nutrient requirement models, where the potential growth and body composition of a genotype are described by Gompertz parameters (Gous et al., 1999, 2024; Vargas et al., 2020), and they are used to compare genotypes and sexes and as selection criteria (Fitzhugh, 1976; Lopez et al., 2000; Narinç et al., 2017). Because selection has changed the shape of the curve over time, as shown by the large differences in growth, efficiency and yield among broiler lines representing 1957, 1978 and 2005 (Zuidhof et al., 2014), the growth curve of each genotype should be measured separately rather than borrowing parameters from another.
 
-2.6.5		Relationship between chronological age and body weight.
+#### **2.6.5** Relationship between chronological age and body weight.
 
 Body weight is a non-linear, monotonic increasing function of age. The absolute growth rate   rises to a maximum at the inflection point and falls thereafter, whereas the relative growth rate  declines throughout. For the Gompertz model,
 
@@ -462,11 +486,11 @@ W = body weight at time t
 
 =  adjustment for the current body weight.
 
-2.7 		Regression models for describing chicken growth
+### **2.7** Regression models for describing chicken growth
 
 Regression models that are linear in their parameters (linear, polynomial and spline) are the principal alternatives to non-linear functions. They can be fitted by ordinary least squares without iteration or starting values and cannot fail to converge, but their parameters usually lack direct biological meaning.
 
-2.7.1	 	Linear regression
+#### **2.7.1** Linear regression
 
 A linear model cannot adequately describe an entire sigmoid growth curve, as it is only suitable for approximating short sections where growth is relatively linear. This limitation is evident in the least-squares means for male FUNAAB Alpha chickens presented in Table 2.1 (Bashiru et al., 2019a). Applying a single slope across the entire growth period would fail to account for the distinct phases of growth. Consequently, linear models have primarily served as reference models for evaluating the performance of non-linear functions, as demonstrated in studies on Italian local chickens (Rizzi et al., 2013) and comparisons of linear and non-linear models for body protein growth.
 
@@ -476,7 +500,7 @@ Table 2.1. Average weekly gain of FUNAAB-Alpha chickens, calculated from least-s
 
 source: (Rizzi et al., 2013)
 
-2.7.2	 	Polynomial regression
+#### **2.7.2** Polynomial regression
 
 A polynomial of degree q is  The degree is chosen by sequential F-tests, adjusted R² or AIC/BIC. Raw powers of t are highly collinear; orthogonal polynomials remove this problem without changing the fitted curve (Draper and Smith, 1998). Polynomials follow the interior of a curve well, but they have no asymptote and diverge outside the data, so they cannot supply a mature weight or a maturity age. They also tend to oscillate near the ends as the degree rises and may predict implausible hatch weights. Some studies compare growth curves by pairing polynomial or spline functions with the usual sigmoid models (Aggrey, 2002; Şengül et al., 2024). For example, one study fitted five non-linear models and the spline-based MARS algorithm to broiler data (Şengül et al., 2024). Among the studies I reviewed, though, splines were reported for chickens more often than polynomial models.
 
@@ -496,7 +520,7 @@ e1 = random error term for the i-th observation.
 
 i = index identifying each observation.
 
-2.7.3 	Segmented or spline regression
+#### **2.7.3** Segmented or spline regression
 
 The curve is continuous at each knot. The slope in the first segment is β₁, and the slope after the j-th knot is , so every coefficient is interpretable as a change in growth rate. A knot is a point at which the growth rate changes. Knots can be fixed from the data plot (Aggrey, 2002; Bashiru et al., 2019a) or estimated as breakpoints in segmented regression. Penalised B-splines are a smoother alternative that controls flexibility by penalty and not by knot number, and B-spline random regressions have been used to model growth in cattle.
 
@@ -508,25 +532,27 @@ Where:
 
 j = index identifying the segment or change point in the piecewise regression model.
 
-CHAPTER THREE
+---
 
-3.0	MATERIALS AND METHODS
+# Chapter Three
 
-3.1	Ethical consideration
+### **3.0** MATERIALS AND METHODS
+
+### **3.1** Ethical consideration
 
 All experimental procedures will be conducted in accordance with institutional guidelines for the care and use of animals in research. Ethical approval for this study will be obtained from the Institutional Animal Care and Use Committee (IACUC) of the Federal University of Agriculture, Abeokuta.
 
-3.2	Experimental site
+### **3.2** Experimental site
 
 This study will be conducted at the Poultry Breeding Unit of the Directorate of University Farms (DUFARMS), Federal University of Agriculture, Abeokuta (FUNAAB), Ogun State, Nigeria. FUNAAB is located at latitude 7°13'N and longitude 3°26'E at an altitude of approximately 76m above sea level within the rainforest agro-ecological zone of SouthWest Nigeria, characterised by a bimodal rainfall pattern, high humidity, and ambient temperatures ranging from 22°C to 34°C. The breeding unit maintains a closed nucleus flock with structured mating and full pedigree recording.
 
-3.3	Experimental birds
+### **3.3** Experimental birds
 
 The study will follow a completely randomised design with a 2 × 2 factorial arrangement of genotype (FUNAAB Alpha, Noiler) and sex (male, female). A total of  two hundred (200) unsexed, day-old chicks, comprising hundred (100) birds each of two chicken genotypes FUNAAB Alpha and Noiler will be procured from two reputable hatcheries located in Abeokuta (Ogun State) and Ibadan (Oyo State), respectively. Each genotype will be housed in a separate deep litter pen from day-old and wing-tagged for identification, with distinct colour tags assigned to each genotype.
 
 Sex determination will be carried out at four (4) weeks of age using the Visual sex identification based on secondary sexual characteristics (comb and wattle development which relies on differences in comb and wattle growth rate and pattern between male and female birds. Following sexing, birds within each genotype will be regrouped and reared separately by sex to allow for evaluation of genotype and sex effects, as well as their interaction, on the growth.
 
-3.4	Management of the birds
+### **3.4** Management of the birds
 
 Prior to the arrival of the chicks, the pen will be thoroughly cleaned, disinfected, and fumigated in accordance with standard biosecurity protocols. The birds will be housed in a well-ventilated, conventional deep litter poultry pen equipped with standard feeder and drinker space allocations in line with recommended stocking density guidelines. Fresh wood shavings will be used as litter material throughout the experimental period.
 
@@ -534,29 +560,29 @@ Brooding will be conducted for two weeks using charcoal pots and electric bulbs 
 
 The birds will thereafter be reared for a total period of ten (10) weeks under uniform management conditions. All birds within each genotype and sex group will be subjected to identical feeding, watering, and health management routine throughout the experimental period, in accordance with standard practices recommended by the Food and Agriculture Organization (FAO). Uniform management conditions will be maintained throughout to ensure that observed differences between genotype and sex groups are attributable solely to genetic and sex-related variation rather than environmental factors.
 
-3.4	Biosecurity measures
+### **3.4** Biosecurity measures
 
 Strict biosecurity measures will be implemented throughout the study period. Dedicated rubber footwear will be placed at the entrance of the poultry house to minimize the introduction of pathogenic organisms. Visitor access to the poultry unit will be restricted to prevent disease transmission.
 
 Litter materials will be replaced as necessary to maintain dryness and prevent microbial proliferation. Routine sanitation practices will be strictly observed to ensure proper hygiene and minimize offensive odors within the pen.
 
-3.5	Experimental diet
+### **3.5** Experimental diet
 
 The birds will be fed commercially prepared New Hope poultry feeds throughout the experimental period. Three feed types will be used acccording to the birds growth stages: New Hope 510 (Starter), 511 (Grower) and 512 (Finisher). The starter diet (510) will be provided from week 1-4, followed by the grower diet (511) and subsequently the finisher diet (512) as the birds advance in age. Feed and drinking water will be provided ad libitum throughout the experimental period.
 
-3.6	Vaccination and medication
+### **3.6** Vaccination and medication
 
 The birds will be subjected to a vaccination and medication programme throughout the experimental period to protect them against common poultry diseases and maintain good health. Vaccines, antibiotics, multivitamins and other treatments will be administered according to the farm health management schedule, as presented in Table 3
 
 Table 3: Vaccination and medication programme for the experimental birds
 
-3.7 	Data Collection
+### **3.7** Data Collection
 
 Individual live body weight (g) will be recorded for every bird at hatch (day-old) and then weekly until 10 weeks of age. Weighing will be done in the morning before feeding, using a digital scale with [0.1 g/1 g] precision, and the same weighing procedure will be used for all birds.
 
-3.7.1 	Statistical Analysis
+#### **3.7.1** Statistical Analysis
 
-3.7.2		Fitting the growth models
+#### **3.7.2** Fitting the growth models
 
 Body weight (W) will be modelled as a function of age (t) using five nonlinear growth functions and linear and polynomial regression models:
 
@@ -566,7 +592,7 @@ Source: ( Richards, 1959; Knížetová et al., 1995; Rawlings et al., 1998; Ara�
 
 Models will initially be fitted separately for each genotype and then examined by genotype and sex. Nonlinear models will be fitted using nonlinear least squares with reasonable starting values and parameter constraints. Repeated measurements from the same bird will be accounted for in inferential analyses.
 
-3.7.3		Goodness-of-fit assessment
+#### **3.7.3** Goodness-of-fit assessment
 
 Model performance will be compared using the coefficient of determination, root mean square error, Akaike information criterion, Bayesian information criterion, and residual diagnostics:
 
@@ -594,13 +620,15 @@ RGR (t) = Relative growth rate at age t
 
 = Rate of change in body weight with age
 
-3.6		Statistical Analysis
+### **3.6** Statistical Analysis
 
 The data obtained on each of the parameters will be analyzed using Statistical Analysis System (SAS Institute Inc., 2018). Prior to analysis, the data will be screened for missing values, outliers, and normality. Descriptive statistics will be computed for all measured variables to summarize the distribution of body weight and linear body measurements in each genotype. Statistical significance will be declared at P < 0.05.
 
 \
 
-REFERENCES
+---
+
+# References
 
 Adamu, J., Shuaibu, A. Y., and Raji, A. O. 2021. Growth characteristics of Noiler chickens as determined by nonlinear algorithms. Nigerian Journal of Animal Production, 48(5), 12–19. https://doi.org/10.51791/njap.vi.4140
 
@@ -780,9 +808,7 @@ Zuidhof, M. J., Schneider, B. L., Carney, V. L., Korver, D. R., and Robinson, F.
 
 Şengül, T., Çelik, Ş., Şengül, A. Y., İnci, H., and Şengül, Ö. 2024. Investigation of growth curves with different nonlinear models and MARS algorithm in broiler chickens. PLOS ONE, 19(11), 1-15. https://doi.org/10.1371/journal.pone.0307037
 
-
 ### Table 1
-
 
 | Genotype | Origin | Weight gain over Fulani at 42 days (%) |
 
@@ -794,9 +820,7 @@ Zuidhof, M. J., Schneider, B. L., Carney, V. L., Korver, D. R., and Robinson, F.
 
 | FUNAAB Alpha | Nigeria | 187 |
 
-
 ### Table 2
-
 
 | Parameter | Interpretation | Practical mode |
 
@@ -808,9 +832,7 @@ Zuidhof, M. J., Schneider, B. L., Carney, V. L., Korver, D. R., and Robinson, F.
 
 | m (or d) | Shape parameters / (Richards only) | Determines the position of the inflection relative to A |
 
-
 ### Table 3
-
 
 | Quantity | Logistic | Gompertz | von Bertalanffy | Brody |
 
@@ -824,9 +846,7 @@ Zuidhof, M. J., Schneider, B. L., Carney, V. L., Korver, D. R., and Robinson, F.
 
 | Age at 95% of A |  |  |  |  |
 
-
 ### Table 4
-
 
 | Sex | Period (weeks) | Start weight (g) | End weight (g) | Calculation | Gain (g/week) |
 
@@ -838,9 +858,7 @@ Zuidhof, M. J., Schneider, B. L., Carney, V. L., Korver, D. R., and Robinson, F.
 
 | Female | 10 to 20 | 568.23 | 1321.71 | (1321.71 − 568.23)/10 | 75.3 |
 
-
 ### Table 5
-
 
 | Day | Drug/Treatment | Purpose |
 
@@ -866,9 +884,7 @@ Zuidhof, M. J., Schneider, B. L., Carney, V. L., Korver, D. R., and Robinson, F.
 
 | Day  28 | Second admininstration of Enrofloxacin | Antibacterial treatment |
 
-
 ### Table 6
-
 
 | Model | Equation |
 
